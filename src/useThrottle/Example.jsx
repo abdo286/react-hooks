@@ -4,7 +4,7 @@ import useThrottle from "./useThrottle";
 
 export default function App() {
   const [count, setCount] = useState(0);
-  useThrottle(() => console.log("5"), 500, [count]);
+  useThrottle(() => console.log("5"), 2000, [count]);
 
   return (
     <div>
