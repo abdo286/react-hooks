@@ -1,10 +1,10 @@
 import * as React from "react";
 import { useState } from "react";
-import useDebounce from "./useDebounce";
+import useThrottle from "./useThrottle";
 
 export default function App() {
   const [count, setCount] = useState(0);
-  useDebounce(() => console.log("5"), 500, [count]);
+  useThrottle(() => console.log("5"), 500, [count]);
 
   return (
     <div>
