@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {useState} from 'react' 
 import useDebounce from './useDebounce'
-import './style.css';
 
 export default function App() {
   const [count, setCount]=useState(0)
